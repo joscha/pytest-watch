@@ -54,6 +54,13 @@ pass or fail:
 
   using [GrowlNotify][].
 
+  ```bash
+  $ ptw --onpass "terminal-notifier -message \"Tests passed\" -title \"✅ Pass\"" \
+        --onfail "terminal-notifier -message \"Tests failed\" -title \"❌ Fail\""
+  ```
+
+  using the OSX Notification Center via [terminal-notifier][].
+
 - **Windows**
 
   ```bat
@@ -198,3 +205,4 @@ Use this software often? <a href="https://saythanks.io/to/joeyespo" target="_bla
 [nose]: http://nose.readthedocs.org/en/latest/
 [authors.md]: ./AUTHORS.md
 [twitter]: https://twitter.com/joeyespo
+[terminal-notifier]: https://github.com/julienXX/terminal-notifier
